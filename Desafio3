@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+import java.util.Objects;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
+public class Desafio3 {
+    public static void main(String[] args) {
+        System.out.print("Digite um numero: ");
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> usados = new ArrayList();
+        
+        int soma = 0;
+        int numero = scanner.nextInt();
+        
+        for (int i = 2; i < numero; i++) {
+            if (validaPrimo(i)){
+                soma = soma + i;
+                
+                if (soma < numero){
+                    usados.add(i);
+                }else{
+                    soma = soma - i;
+                }
+
+            }
+        }
+        
+        System.out.print(soma+" = "+  usados.stream().map(Objects::toString).collect(Collectors.joining(" + ")));
+    }
+
+    public static boolean validaPrimo(int numero) {
+        for (int i = 2; i < numero; i++) {
+            if (numero % i == 0)
+                return false;
+        }
+        return true;
+    }
+
+}
