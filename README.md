@@ -10,4 +10,4 @@ Nesse caso, o usuário deve informar uma palavra e o programa irá retornar o va
 
 Desafio 02 = Essa aplicação retorna todos os números que possuem o mesmo número de divisores que seu subsequente. O usuário não precisa inserir nenhum dado para que o resultado seja mostrado.
 
-Desafio 03 = 
+Desafio 03 = O propósito desse código é mostrar o maior número primo calculado através de uma soma consecutiva de números primos. Para isso, o usário deverá informar um valor para que o calculo seja realizado.
