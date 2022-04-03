@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+public class Testachar{
+    public static void main(String[] args){
+        String[] array1 = {"A", "a", "E", "e", "I", "i", "O", "o", "U", "u", "L", "l", "N", "n", "R", "r", "S", "s","T", "t"};
+        String[] array2 = {"D", "d", "G", "g"};
+		String[] array3 = {"B", "b", "C", "c", "M", "m", "P", "p"};
+		String[] array4 = {"F", "f", "H", "h", "V", "v", "W", "w", "Y", "y"};
+		String[] array5 = {"K", "k"};
+		String[] array6 = {"J", "j", "K", "k"};
+		String[] array7 = {"Q", "q", "Z", "z"};
+		
+        Scanner ler = new Scanner (System.in);
+        String palavra;
+        int soma;
+
+        System.out.println("Informe uma palavra: ");
+        palavra = ler.next();
+        soma = 0;
+
+        for(int i = 0; i < palavra.length(); i++){		
+            for(int j = 0; j < array1.length; j++){
+                if(array1[j].equals(String.valueOf(palavra.charAt(i)))){
+                    soma+=1;
+                }
+            }
+            for(int j = 0; j < array2.length; j++){
+                if(array2[j].equals(String.valueOf(palavra.charAt(i)))){
+                    soma+=2;
+                }
+            }
+			for(int j = 0; j < array3.length; j++){
+                if(array3[j].equals(String.valueOf(palavra.charAt(i)))){
+                    soma+=3;
+                }
+            }
+			for(int j = 0; j < array4.length; j++){
+                if(array4[j].equals(String.valueOf(palavra.charAt(i)))){
+                    soma+=4;
+                }
+            }
+			for(int j = 0; j < array5.length; j++){
+                if(array5[j].equals(String.valueOf(palavra.charAt(i)))){
+                    soma+=5;
+                }
+            }
+			for(int j = 0; j < array6.length; j++){
+                if(array6[j].equals(String.valueOf(palavra.charAt(i)))){
+                    soma+=8;
+                }
+            }
+			for(int j = 0; j < array7.length; j++){
+                if(array7[j].equals(String.valueOf(palavra.charAt(i)))){
+                    soma+=10;
+                }
+            }
+        }
+
+        System.out.print(soma);
+    }
+}
