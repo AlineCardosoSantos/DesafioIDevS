@@ -4,6 +4,8 @@ Para a programação dos códigos, foi utilizada a linguagem de programação Ja
 
 Desafio 01 = Como objetivo retornar a soma da pontuação de caracteres de uma palavra, utilizou-se como base a tabela abaixo:
 
+![aaaa](https://user-images.githubusercontent.com/102034078/161408489-9436fa8a-c07f-4f8e-900a-bf60a401f58d.PNG)
+
 Nesse caso, o usuário deve informar uma palavra e o programa irá retornar o valor da soma das letras.
 
 Desafio 02 = Essa aplicação retorna todos os números que possuem o mesmo número de divisores que seu subsequente. O usuário não precisa inserir nenhum dado para que o resultado seja mostrado.
